@@ -1,0 +1,9 @@
+<%= form_for @page do |p| %>
+  <%= p.label :topic %>
+  <%= p.text_field :topic %>
+  <br><br>
+  <%= p.label :description %>
+  <%= p.text_area :description %>
+  <br><br>
+  <%= p.submit 'save' %>
+<% end %>

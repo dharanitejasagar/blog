@@ -1,0 +1,11 @@
+<body>
+<% @pages.each do |p| %>
+<h3><%= p.topic %></h3>
+<p><%= p.description %></p>
+<%= link_to 'show', page_path(p) %>
+<%= link_to 'edit', edit_page_path(p) %>
+<%= link_to 'delete',p, :method=> :delete %>
+<hr>
+<% end %>
+<%= link_to 'new', new_page_path %>
+</body>
